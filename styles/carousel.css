@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  margin: auto;
+  width: 90%;
+  max-width: 40rem;
+  overflow: hidden;
+  max-height: max-content;
+  background-color: var(--primary-color-bg);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.modal::backdrop {
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+#close-modal {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+#close-modal:hover {
+  cursor: pointer;
+}
+
+.carousel img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel button {
+  position: absolute;
+  font-size: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  top: 40%;
+  width: 30px;
+}
+
+.carousel button:hover {
+  cursor: pointer;
+}
+
+#button-left {
+  left: 0;
+}
+
+#button-right {
+  right: 0;
+}
+
+#description {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+#description {
+  font-size: 1.2rem;
+  padding: 0 5px;
+  text-transform: uppercase;
+  color: var(--semi-color-700);
+}

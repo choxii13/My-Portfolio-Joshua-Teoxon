@@ -1,0 +1,29 @@
+#projects ul {
+  padding: 0 var(--padding) var(--padding) var(--padding);
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 10px;
+  position: relative;
+}
+
+#projects ul li {
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--main-color-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+#projects ul li button #projects ul li:hover {
+  cursor: pointer;
+}
+
+#projects img {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+}

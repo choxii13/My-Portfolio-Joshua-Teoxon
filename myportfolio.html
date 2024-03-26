@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="/styles/base.css" rel="stylesheet">
+    <link href="/styles/navigation.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/skills.css" rel="stylesheet">
+    <link href="/styles/projects.css" rel="stylesheet">
+    <link href="/styles/carousel.css" rel="stylesheet">
+    <title>Joshua T.</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <p class="gradient-text" id="logo">Joshua T. </p>
+            <ul class="nav-menu">
+                <li> <a href="#home">Home </a></li>
+                <li> <a href="#about-me">About</a> </li>
+                <li> <a href="#journey">Journey</a></li>
+                <li> <a href="#skills">Skills </a> </li>
+                <li> <a href="#projects">Projects </a></li>
+            </ul>
+            <button id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+    </header>
+    <aside>
+        <ul id="mobile-menu">
+            <li> <a href="#home">Home </a></li>
+            <li> <a href="#about-me">About</a> </li>
+            <li> <a href="#journey">Journey</a></li>
+            <li> <a href="#skills">Skills </a> </li>
+            <li> <a href="#projects">Projects </a></li>
+
+        </ul>
+    </aside>
+
+    <main>
+        <dialog class="modal" close>
+
+        </dialog>
+        <section id="home">
+            <div class="container">
+                <div class="container-left">
+                    <p id="joshua-teoxon"> I am Joshua Teoxon</p>
+                    <p class="gradient-text" id="web-dev"> Web developer</p>
+                    <button class="btn"> Contact Me </button>
+                </div>
+                <div class="container-right">
+                    <img id="home-image" src="/images/Joshua Teoxon.jpeg" alt="Joshua Teoxon">
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="container">
+                <div class="container-left">
+                    <h2> About me </h2>
+                    <p class="big-para"> I am a Web Developer</p>
+                    <p class="para"> I know how to create front-end and backend developing. I am passionate and commited
+                        on
+                        learning
+                        on a daily basis. I am a fast learner and willing to learn any task
+                        that I've been given </p>
+                </div>
+                <div class="container-right">
+                    <img id="joshua-second" src="/images/Joshua 2nd.jpg" alt="Joshua Teoxon">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="journey">
+            <h2> Journey</h2>
+            <div class="container">
+                <div class="container-left">
+                    <p class="transparent">Experience</p>
+                    <p class="big-para">My journey as a<span> Web Developer</span></p>
+                </div>
+                <div class="container-right">
+                    <ul class="journey">
+                        <li>
+                            <h4> Web Developer </h4>
+                            <p> learning front-end and backend program (2023-continuing)</p>
+                        </li>
+                        <li>
+                            <h4> BBLTED- ICT</h4>
+                            <p> graduated at PUP as a Teacher in ICT (2019-2023)</p>
+                        </li>
+                        <li>
+                            <h4> Intern Teacher </h4>
+                            <p> teaching HTML, CSS, and Javascript (2023 - 4 months)</p>
+                        </li>
+                        <li>
+                            <h4>ICT - Programmer </h4>
+                            <p>learned basic JAVA, HTML, CSS AND JAVASCRIPT (2017-2019)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <h2> Skills </h2>
+            <div class="container">
+                <div class="container-left">
+                    <p class="transparent"> Expertise</p>
+                    <p class="big-para"> A <span>graphical</span> representation of my skills
+                    </p>
+                </div>
+                <div class="container-right">
+                    <div class="frontend-backend">
+                        <h3> Front End </h3>
+                        <div class="progress-container">
+                            <p> HTML </p>
+                            <progress value="90" max="100">
+
+                        </div>
+
+                        <div class="progress-container">
+                            <p> CSS </p>
+                            <progress value="70" max="100">
+
+                        </div>
+
+                        <div class="progress-container">
+                            <p> Javascript </p>
+                            <progress value="80" max="100">
+                        </div>
+
+                        <div class="progress-container">
+                            <p> React.js </p>
+                            <progress value="60" max="100">
+                        </div>
+
+                    </div>
+
+                    <div class="frontend-backend">
+                        <h3> Back End </h3>
+
+                        <div class="progress-container">
+                            <p> Node.js </p>
+                            <progress value="60" max="100">
+                        </div>
+
+                        <div class="progress-container">
+                            <p> Mongodb </p>
+                            <progress value="40" max="100">
+                        </div>
+
+                        <div class="progress-container">
+                            <p> Workbench SQL</p>
+                            <progress value="40" max="100">
+                        </div>
+                        <div class="progress-container">
+                            <p> API's</p>
+                            <progress value="60" max="100">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2> Projects </h2>
+            <ul class="project-grid">
+                <li>
+                    <img src="/project-image/authentication/1.PNG">
+                    <p> Authentication </p>
+                    <button class="btn alt" data-project="authentication"> Read More</button>
+                </li>
+                <li>
+                    <img src="/project-image/facebook/1.PNG">
+                    <p> Facebook </p>
+                    <button class="btn alt" data-project="facebook"> Read More</button>
+                </li>
+                <li>
+                    <img src="/project-image/fileupload/1.PNG">
+                    <p> File Upload with mongodb </p>
+                    <button class="btn alt" data-project="fileupload"> Read More</button>
+                </li>
+                <li>
+                    <img src="/project-image/json/1.PNG">
+                    <p> EJS with JSON </p>
+                    <button class="btn alt" data-project="json"> Read More</button>
+                </li>
+                <li>
+                    <img src="/project-image/sqlejs/1.PNG">
+                    <p> Sql/mongodb with ejs </p>
+                    <button class="btn alt" data-project="sqlejs"> Read More</button>
+                </li>
+                <li>
+                    <img src="/project-image/todolist/1.PNG">
+                    <p> Todolist with JSON </p>
+                    <button class="btn alt" data-project="todolist"> Read More</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p> CopyRight @ 2019 Joshua T. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script type="module" src="/scripts/main.js"></script>
+
+</html>
