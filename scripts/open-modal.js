@@ -1,4 +1,4 @@
-import { carouselHTML } from "./carouselHTML.js";
+import { carouselElement } from "./carouselHTML.js";
 
 export const modalElement = document.querySelector(".modal");
 const readMoreButtonElements = document.querySelectorAll(
@@ -8,7 +8,7 @@ const readMoreButtonElements = document.querySelectorAll(
 export function openModal(event) {
   modalElement.showModal();
   const button = event.target;
-  carouselHTML(button);
+  carouselElement(button);
 }
 
 for (const readMoreButtonElement of readMoreButtonElements) {
