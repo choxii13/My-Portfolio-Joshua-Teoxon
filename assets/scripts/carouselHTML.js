@@ -15,7 +15,7 @@ function myCarouselData(name) {
     carouselData += `<a href="/project-image/${name}/${
       index + 1
     }.PNG" target="_blank">
-        <img src="/project-image/${name}/${index + 1}.PNG">
+        <img src="/assets/project-image/${name}/${index + 1}.PNG">
         <p id="description"> ${value}</p>
         </a>`;
   });
