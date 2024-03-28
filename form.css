@@ -30,21 +30,19 @@ textarea {
 }
 
 .icon-class {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
-.icon-class img {
-  height: 3rem;
+i {
+  color: var(--semi-color-700);
+  font-size: 1.5rem;
 }
 
-.icon-class a:nth-child(1) img {
-  height: 3.3rem;
+i:before {
+  margin-right: 10px;
 }
 
 @media (min-width: 48rem) {
   .icon-class {
-    justify-content: flex-start;
+    text-align: left;
   }
 }
