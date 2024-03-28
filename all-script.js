@@ -184,7 +184,7 @@ const scrollReveal = {
 };
 
 revealFn.reveal("#home", { ...scrollReveal });
-revealFn.reveal("#about-me", { ...scrollReveal, origin: "top" });
-revealFn.reveal("#journey", { ...scrollReveal, origin: "left" });
-revealFn.reveal("#projects", { ...scrollReveal, origin: "right" });
+revealFn.reveal("#about-me", { ...scrollReveal });
+revealFn.reveal("#journey", { ...scrollReveal });
+revealFn.reveal("#projects", { ...scrollReveal });
 revealFn.reveal("#skills", { ...scrollReveal });
