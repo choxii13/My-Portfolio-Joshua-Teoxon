@@ -173,8 +173,6 @@ function sendingEmail(event) {
 }
 
 formElement.addEventListener("submit", sendingEmail);
-
-const revealFn = ScrollReveal();
 const scrollReveal = {
   origin: "bottom",
   distance: "90px",
@@ -182,9 +180,17 @@ const scrollReveal = {
   duration: 2000,
   reset: true,
 };
+const myScrollId = [
+  "#home",
+  "#about-me",
+  "#journey",
+  "#projects",
+  "#skills",
+  "#project",
+  "#contact-me",
+];
 
-revealFn.reveal("#home", { ...scrollReveal });
-revealFn.reveal("#about-me", { ...scrollReveal });
-revealFn.reveal("#journey", { ...scrollReveal });
-revealFn.reveal("#projects", { ...scrollReveal });
-revealFn.reveal("#skills", { ...scrollReveal });
+for (const id of myScrollId) {
+  ScrollReveal().reveal(id, { ...scrollReveal });
+  ScrollReveal().reveal(`${id} *`, { ...scrollReveal, delay: 500 });
+}
