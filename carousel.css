@@ -9,6 +9,16 @@
   background-color: var(--primary-color-bg);
   border-radius: var(--border-radius);
   border: none;
+  animation: modal 0.2s linear;
+}
+
+@keyframes modal {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .modal::backdrop {
@@ -25,10 +35,24 @@
   cursor: pointer;
 }
 
+.modal .carousel {
+  overflow: hidden;
+}
+
 .carousel img {
   height: 15rem;
   width: 100%;
   object-fit: cover;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .carousel {
@@ -41,11 +65,13 @@
   position: absolute;
   font-size: 40px;
   border: none;
-  background-color: black;
+
+  background-color: rgb(121, 117, 117);
   color: white;
   font-weight: 700;
   top: 40%;
   width: 30px;
+  z-index: 1000;
 }
 
 .carousel button:hover {

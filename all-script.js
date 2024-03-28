@@ -2,10 +2,12 @@
 const burgerElement = document.querySelector("#mobile-menu-btn");
 const asideElement = document.querySelector("aside ul");
 const liElements = document.querySelectorAll("aside ul li");
+
 function toggleAside() {
   asideElement.classList.toggle("open");
 }
 burgerElement.addEventListener("click", toggleAside);
+
 for (const liElement of liElements) {
   liElement.addEventListener("click", toggleAside);
 }
@@ -95,6 +97,10 @@ function carouselFn(carouselImages) {
   function showSlide(index) {
     for (const carouselImage of carouselImages) {
       carouselImage.style.display = "none";
+
+      if (currentIndex != 0) {
+        carouselImage.style.animation = "zoomIn 0.6s linear";
+      }
     }
     carouselImages[index].style.display = "block";
   }
