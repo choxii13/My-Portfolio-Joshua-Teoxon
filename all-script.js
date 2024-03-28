@@ -149,6 +149,7 @@ function carouselFn(carouselImages) {
     modalElement.close();
   });
 }
+
 // my html for carousel
 function myCarouselHTML(carouselData, myTitle) {
   return `<p id="close-modal"> X </p>
@@ -163,7 +164,7 @@ function myCarouselHTML(carouselData, myTitle) {
   `;
 }
 
-// for my form element
+// for my form element // sending email
 const formElement = document.querySelector("form");
 
 function sendingEmail(event) {
@@ -171,14 +172,15 @@ function sendingEmail(event) {
   const data = Object.fromEntries(fd.entries());
   event.target.action = `mailto:teoxonjoshua13@gmail.com?subject=${data.subject}&amp&body=Fullname:${data.firstname}${data.lastname}%0Dmessage:${data.body}`;
 }
-
 formElement.addEventListener("submit", sendingEmail);
+
+// for my scroll
 const scrollReveal = {
   origin: "bottom",
   distance: "90px",
   delay: 300,
   duration: 2000,
-  reset: true,
+  reset: false,
 };
 const myScrollId = [
   "#home",
