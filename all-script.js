@@ -88,6 +88,7 @@ function carouselFn(carouselImages) {
   const buttonLeftElement = document.getElementById("button-left");
   const buttonRightElement = document.getElementById("button-right");
 
+  //starting index for slide
   let currentIndex = 0;
   // fn for current slide
   function showSlide(index) {
@@ -110,7 +111,7 @@ function carouselFn(carouselImages) {
     showSlide(currentIndex);
   }
 
-  // running for current slide
+  // for current slide
   showSlide(currentIndex);
 
   buttonLeftElement.addEventListener("click", nextSlide);
