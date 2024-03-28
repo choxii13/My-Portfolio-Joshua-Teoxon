@@ -83,6 +83,7 @@ for (const readMoreButtonElement of readMoreButtonElements) {
 }
 
 // all functionts for carousel, previous slide, next slide, and closing modal element
+// need to run after loading of the html in the modal
 function carouselFn(carouselImages) {
   const closeModalElement = document.querySelector("#close-modal");
   const buttonLeftElement = document.getElementById("button-left");
