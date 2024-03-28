@@ -84,6 +84,26 @@ for (const readMoreButtonElement of readMoreButtonElements) {
   readMoreButtonElement.addEventListener("click", openModal);
 }
 
+// for chop chop element in one functions
+function carouselElement(button) {
+  const name = button.dataset.project;
+  const myTitle = button.parentElement.querySelector("p");
+  modalElement.innerHTML = myCarouselHTML(myCarouselData(name), myTitle);
+  carouselFn(document.querySelectorAll(".carousel a"));
+}
+
+// all data for modal carousel
+function myCarouselData(name) {
+  let carouselData = "";
+  carousel[name].map((value, index) => {
+    carouselData += `<a href="./${name}/${index + 1}.PNG" target="_blank">
+          <img src="./${name}/${index + 1}.PNG">
+          <p id="description"> ${value}</p>
+          </a>`;
+  });
+  return carouselData;
+}
+
 // all functionts for carousel, previous slide, next slide, and closing modal element
 // need to run after loading of the html in the modal
 function carouselFn(carouselImages) {
@@ -129,37 +149,17 @@ function carouselFn(carouselImages) {
     modalElement.close();
   });
 }
-
-// for chop chop element in one functions
-function carouselElement(button) {
-  const name = button.dataset.project;
-  const myTitle = button.parentElement.querySelector("p");
-  modalElement.innerHTML = myCarouselHTML(myCarouselData(name), myTitle);
-  carouselFn(document.querySelectorAll(".carousel a"));
-}
-
-// all data for modal carousel
-function myCarouselData(name) {
-  let carouselData = "";
-  carousel[name].map((value, index) => {
-    carouselData += `<a href="./${name}/${index + 1}.PNG" target="_blank">
-          <img src="./${name}/${index + 1}.PNG">
-          <p id="description"> ${value}</p>
-          </a>`;
-  });
-  return carouselData;
-}
-
 // my html for carousel
 function myCarouselHTML(carouselData, myTitle) {
   return `<p id="close-modal"> X </p>
   <h2> ${myTitle.textContent} </h2>
   <div class="carousel">
-      <button id="button-left"> <  </button>
       ${carouselData}
+  </div>
+  <button id="button-left">
+  < </button>
       <button id="button-right">
           > </button>
-  </div>
   `;
 }
 
@@ -173,3 +173,18 @@ function sendingEmail(event) {
 }
 
 formElement.addEventListener("submit", sendingEmail);
+
+const revealFn = ScrollReveal();
+const scrollReveal = {
+  origin: "bottom",
+  distance: "90px",
+  delay: 300,
+  duration: 2000,
+  reset: true,
+};
+
+revealFn.reveal("#home", { ...scrollReveal });
+revealFn.reveal("#about-me", { ...scrollReveal, origin: "top" });
+revealFn.reveal("#journey", { ...scrollReveal, origin: "left" });
+revealFn.reveal("#projects", { ...scrollReveal, origin: "right" });
+revealFn.reveal("#skills", { ...scrollReveal, origin: "bottom" });

@@ -39,6 +39,29 @@ body {
   font-size: 0.8rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary-color-bg);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
 main,
 footer {
   width: 90%;
