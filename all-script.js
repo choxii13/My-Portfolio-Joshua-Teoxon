@@ -187,4 +187,4 @@ revealFn.reveal("#home", { ...scrollReveal });
 revealFn.reveal("#about-me", { ...scrollReveal, origin: "top" });
 revealFn.reveal("#journey", { ...scrollReveal, origin: "left" });
 revealFn.reveal("#projects", { ...scrollReveal, origin: "right" });
-revealFn.reveal("#skills", { ...scrollReveal, origin: "bottom" });
+revealFn.reveal("#skills", { ...scrollReveal });
