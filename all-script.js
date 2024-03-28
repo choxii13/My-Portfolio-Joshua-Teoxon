@@ -134,10 +134,8 @@ function carouselElement(button) {
 function myCarouselData(name) {
   let carouselData = "";
   carousel[name].map((value, index) => {
-    carouselData += `<a href="/project-image/${name}/${
-      index + 1
-    }.PNG" target="_blank">
-          <img src="/assets/project-image/${name}/${index + 1}.PNG">
+    carouselData += `<a href="./${name}/${index + 1}.PNG" target="_blank">
+          <img src="./${name}/${index + 1}.PNG">
           <p id="description"> ${value}</p>
           </a>`;
   });
@@ -160,7 +158,7 @@ function myCarouselHTML(carouselData, myTitle) {
 // for my form element
 const formElement = document.querySelector("form");
 
-export function sendingEmail(event) {
+function sendingEmail(event) {
   const fd = new FormData(event.target);
   const data = Object.fromEntries(fd.entries());
   event.target.action = `mailto:teoxonjoshua13@gmail.com?subject=${data.subject}&amp&body=Fullname:${data.firstname}${data.lastname}%0Dmessage:${data.body}`;
