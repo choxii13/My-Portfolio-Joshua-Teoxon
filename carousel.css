@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  z-index: 1; /* Sit on top */
+  z-index: 1;
   margin: auto;
   width: 90%;
   max-width: 40rem;
@@ -40,7 +40,7 @@
 }
 
 .carousel img {
-  height: 15rem;
+  height: 10rem;
   width: 100%;
   object-fit: cover;
 }
@@ -92,4 +92,10 @@
   padding: 0 5px;
   text-transform: uppercase;
   color: var(--semi-color-700);
+}
+
+@media (min-width: 48rem) {
+  .carousel img {
+    min-height: 15rem;
+  }
 }
