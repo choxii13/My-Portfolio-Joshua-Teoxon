@@ -40,10 +40,17 @@ body {
   font-size: 0.8rem;
 }
 
-main {
+main,
+footer {
   width: 90%;
   max-width: 50rem;
   margin: 6rem auto 0 auto;
+}
+
+footer {
+  padding: var(--padding);
+  text-align: center;
+  margin: 0 auto;
 }
 
 ul {
@@ -98,12 +105,6 @@ span {
   background: var(--linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-footer {
-  width: 90%;
-  max-width: 50rem;
-  margin: auto;
 }
 
 .para {

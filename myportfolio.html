@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="/styles/base.css" rel="stylesheet">
     <link href="/styles/navigation.css" rel="stylesheet">
@@ -13,8 +14,9 @@
     <link href="/styles/skills.css" rel="stylesheet">
     <link href="/styles/projects.css" rel="stylesheet">
     <link href="/styles/carousel.css" rel="stylesheet">
+    <link href="/styles/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Joshua T.</title>
-
 </head>
 
 <body>
@@ -44,7 +46,6 @@
             <li> <a href="#journey">Journey</a></li>
             <li> <a href="#skills">Skills </a> </li>
             <li> <a href="#projects">Projects </a></li>
-
         </ul>
     </aside>
 
@@ -57,7 +58,7 @@
                 <div class="container-left">
                     <p id="joshua-teoxon"> I am Joshua Teoxon</p>
                     <p class="gradient-text" id="web-dev"> Web developer</p>
-                    <button class="btn"> Contact Me </button>
+                    <a href="#contact-me" class="btn"> Contact Me</a>
                 </div>
                 <div class="container-right">
                     <img id="home-image" src="/images/Joshua Teoxon.jpeg" alt="Joshua Teoxon">
@@ -214,14 +215,46 @@
                 </li>
             </ul>
         </section>
+
+
+        <section id="contact-me">
+            <div class="container">
+                <div class="container-left">
+                    <h2> Contact Me</h2>
+                    <p class='big-para'> Feel free to get in touch with me</p>
+                    <div class="icon-class">
+                        <a href="https://github.com/choxii13"><i class="bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/joshua-teoxon-34223b217/"><i class="bi-linkedin"></i></a>
+                        <a href="mailto:teoxonjoshua13@gmail.com"><i class="bi-google"></i></a>
+                        <a href="https://www.instagram.com/juswatox/"><i class="bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="container-right">
+                    <form method="POST">
+                        <div>
+                            <input type='text' name="firstname" placeholder="First Name" required>
+                            <input type='text' name="lastname" placeholder="Last Name" required>
+                        </div>
+                        <div>
+                            <input type='email' name="email" placeholder="Email Address" required>
+                            <input type='text' name="subject" placeholder="Subject" required>
+                        </div>
+                        <textarea name='body' rows="6" placeholder="Message"></textarea>
+                        <button class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p> CopyRight @ 2019 Joshua T. All Rights Reserved</p>
-        </div>
+        <p> CopyRight @ 2024 Joshua T. All Rights Reserved</p>
     </footer>
 </body>
+
 <script type="module" src="/scripts/main.js"></script>
+
+
 
 </html>

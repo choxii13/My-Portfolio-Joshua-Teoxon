@@ -1,7 +1,8 @@
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: var(--primary-color-bg);
   padding: 0.5rem var(--padding);
   border-radius: var(--border-radius);
@@ -78,6 +79,7 @@ header {
     position: static;
     margin: 0 auto;
     max-width: 50rem;
+    width: 90%;
   }
   main {
     margin: 2rem auto 0 auto;

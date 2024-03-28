@@ -1,9 +1,12 @@
-main section {
-  width: 100%;
+main section,
+footer {
   max-width: 50rem;
   margin-bottom: 2rem;
   background-color: var(--primary-color-bg);
   border-radius: var(--border-radius);
+}
+main + footer {
+  margin-bottom: 0;
 }
 
 .container {
@@ -36,7 +39,9 @@ section:nth-child(1) {
 #about-me .container-right {
   padding: 0;
 }
-#about-me .container-left {
+
+#about-me .container-left,
+#contact-me .container-left {
   padding-top: 0;
 }
 
@@ -50,7 +55,13 @@ section .container-left p {
   height: 15rem;
   margin: auto;
   border-radius: var(--border-radius);
+}
+
+#home img {
   filter: drop-shadow(10px 10px 1px var(--semi-color-700));
+}
+#about-me img {
+  border-radius: 0;
 }
 
 #joshua-second {
@@ -114,22 +125,25 @@ section:nth-child(2) h2 {
   color: var(--semi-color-700);
   opacity: 0.5;
 }
+
 #web-dev {
   font-size: 2.2rem;
 }
+
 @media (min-width: 48rem) {
   .container,
   #home .container,
-  #about-me .container {
+  #about-me .container,
+  #contact-me .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: normal;
   }
+
   #about-me .container-right img {
     height: 100%;
   }
-  #about-me .container-left {
-  }
+
   #home .container {
     align-items: center;
   }
@@ -142,7 +156,8 @@ section:nth-child(2) h2 {
   .container-right {
     text-align: left;
   }
-  #about-me .container-left h2 {
+  #about-me .container-left h2,
+  #contact-me .container h2 {
     text-align: left;
   }
 }
