@@ -8,6 +8,10 @@ header {
   border-radius: var(--border-radius);
   z-index: 1000;
 }
+header a:hover,
+header a:active {
+  color: var(--semi-color-700);
+}
 
 .nav-container {
   display: flex;

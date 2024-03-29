@@ -42,6 +42,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -50,6 +51,7 @@ html.sr .load-hidden {
   width: 1rem;
   border-radius: 30px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--primary-color-bg);
   border-radius: 10px;
@@ -82,6 +84,7 @@ ul {
 a {
   text-decoration: none;
   color: white;
+  transition: color 1s;
 }
 
 h2 {
@@ -101,7 +104,6 @@ span {
 
 .btn {
   font: inherit;
-  background-color: var(--semi-color-700);
   padding: var(--button-top) var(--button-left);
   color: var(--text-color-main);
   border-radius: 4px;
@@ -119,6 +121,7 @@ span {
 .btn.alt:hover,
 .btn:hover {
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .gradient-text {
