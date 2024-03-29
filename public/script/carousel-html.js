@@ -14,8 +14,8 @@ export function carouselElement(button) {
 function myCarouselData(name) {
   let carouselHTML = "";
   carouselData[name].map((value, index) => {
-    carouselHTML += `<a href="../data/${name}/${index + 1}.PNG" target="_blank">
-              <img src="../data/${name}/${index + 1}.PNG">
+    carouselHTML += `<a href="./data/${name}/${index + 1}.PNG" target="_blank">
+              <img src="./data/${name}/${index + 1}.PNG">
               <p id="description"> ${value}</p>
               </a>`;
   });
