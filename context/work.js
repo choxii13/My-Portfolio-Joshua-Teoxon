@@ -2,27 +2,31 @@ export const works = [
   {
     folder: "online-shop-system",
     title: "Online Shop System with Node-js",
-    link: "https://drive.google.com/drive/folders/13645d8pe6cwY5B-XYWRCuF8l-mg91yv9?usp=drive_link",
+    link: "https://vimeo.com/940647848",
     size: 12,
   },
   {
     folder: "facebook-node-js",
     title: "Facebook with Node-js",
-    link: `https://drive.google.com/file/d/13ekxvT2HtFxYg8zu4fYzRFcYt8Qz0Nwf/view?usp=drive_link`,
+    link: `https://vimeo.com/940640159`,
     size: 8,
   },
-
   {
     folder: "facebook-react",
     title: "Facebook with React-js",
-    link: `https://drive.google.com/file/d/13S6NeV_GkxMOkc4vR3-VbOgTOaWWbIkH/view?usp=drive_link`,
+    link: `https://vimeo.com/940635816`,
     size: 6,
   },
-  { folder: "blog-node-js", title: "Blog with Node-js", link: "", size: 5 },
+  {
+    folder: "blog-node-js",
+    title: "Blog with Node-js",
+    link: "https://github.com/choxii13",
+    size: 5,
+  },
   {
     folder: "todo-list-node-js",
     title: "Todo List with Node-js",
-    link: "",
+    link: "https://github.com/choxii13",
     size: 6,
   },
   {
