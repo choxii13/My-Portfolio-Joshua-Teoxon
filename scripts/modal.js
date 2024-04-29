@@ -1,6 +1,6 @@
 import { works } from "../context/work.js";
 import { modalContent } from "../context/modal.js";
-import { lazyLoading } from "/context.js";
+import { lazyLoading } from "./context.js";
 
 const openModal = document.querySelectorAll(".bi-eye");
 
