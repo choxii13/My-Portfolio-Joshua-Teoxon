@@ -1,0 +1,127 @@
+.educ-expi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: max-content;
+}
+
+.educ-expi > h3 {
+  color: var(--secondary--light-color);
+}
+
+.educ-expi > h1 {
+  color: var(--font-dark-color);
+  margin-bottom: 2rem;
+}
+.educ-expi .education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  gap: 1rem;
+}
+
+.educ-expi .education {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  z-index: 2;
+  height: fit-content;
+  text-align: left;
+}
+
+.education .educ-num {
+  height: 3rem;
+  width: 3rem;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--secondary--light-color);
+  background-color: white;
+}
+
+.education .educ-num p {
+  font-size: 1rem;
+  color: var(--secondary--light-color);
+}
+
+.education .educ-para {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 10px;
+  p {
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--font-light-color);
+  }
+}
+
+.education .educ-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  h3 {
+    color: var(--font-dark-color);
+  }
+  h4 {
+    color: var(--font-light-color);
+    font-size: 0.8rem;
+  }
+  h5 {
+    color: var(--font-light-color);
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+}
+
+.educ-expi .straight-line {
+  position: absolute;
+  height: 100%;
+  background-color: aqua;
+  width: 2px;
+  right: 50%;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.educ-expi .education:hover {
+  .educ-para,
+  .educ-num {
+    background-color: var(--secondary--light-color);
+    transition: all 0.2s ease-in;
+  }
+  .educ-para p,
+  .educ-num p {
+    color: white;
+  }
+}
+
+@media (min-width: 60rem) {
+  .educ-expi .education-container {
+    gap: 0;
+  }
+  .educ-expi .education {
+    flex-direction: row;
+  }
+  .education .educ-para,
+  .education .educ-title {
+    width: 50%;
+  }
+  .education .educ-num {
+    display: grid;
+  }
+  .educ-expi .education:nth-child(odd) {
+    flex-direction: row-reverse;
+    .educ-title {
+      text-align: right;
+    }
+  }
+  .educ-expi .straight-line {
+    visibility: visible;
+  }
+}

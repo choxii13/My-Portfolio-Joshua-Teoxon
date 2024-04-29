@@ -1,0 +1,113 @@
+#home {
+  height: 35rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+#home > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: contrast(90%);
+}
+
+.name {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(---font-white-color);
+  position: relative;
+}
+
+.name h5 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-size: clamp(1rem, 6vw, 3rem);
+}
+
+.name h1 {
+  font-size: clamp(1rem, 5vw, 5rem);
+  letter-spacing: 0.5rem;
+}
+
+.name p {
+  font-family: "Shadows Into Light", cursive;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+#home .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--font-dark-color);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background: linear-gradient(
+      to bottom,
+      var(--secondary--light-color) 50%,
+      white 50%
+    )
+    bottom;
+  background-size: 100% 200%;
+  transition: all 0.5s ease-out;
+}
+
+.icons a:hover {
+  background-position: top;
+  color: var(---font-white-color);
+  cursor: pointer;
+}
+
+.animate {
+  animation-name: fadeInTop;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+
+.animate.first {
+  animation-duration: 0.5s;
+}
+
+.animate.second {
+  animation-duration: 0.9s;
+}
+.animate.third {
+  animation-duration: 1.3s;
+}
+.animate.fourth {
+  animation-duration: 1.5s;
+}
+.animate.fifth {
+  animation-duration: 1.8s;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

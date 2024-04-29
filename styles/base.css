@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-dark-color: #333333;
+  --font-light-color: #666666;
+  --background-white-color: #ffffff;
+  --secondary--light-color: #00b4d9;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-white-color);
+  position: relative;
+  overflow: -moz-hidden-unscrollable;
+}
+
+header > nav,
+main > section {
+  width: 100%;
+  margin: auto;
+  max-width: 80rem;
+}
+header > nav {
+  padding: 0 clamp(1rem, 4vw, 4rem);
+}
+
+main > section {
+  padding: 4rem clamp(1rem, 4vw, 4rem);
+}
+
+section:nth-child(2n + 3) {
+  background-color: rgba(233, 231, 231, 0.49);
+}
+
+main > section {
+  height: 100%;
+}
+
+a,
+ul,
+li {
+  all: unset;
+}
+
+.btn {
+  all: unset;
+  font: inherit;
+  display: grid;
+  place-items: center;
+  height: 3rem;
+  width: 10rem;
+  font-weight: 500;
+  box-shadow: 0 0 2px 1px var(--secondary--light-color);
+  text-align: center;
+  border-radius: 2rem;
+  color: white;
+  background: linear-gradient(
+      to left,
+      rgba(246, 244, 244, 0.1) 50%,
+      var(--secondary--light-color) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn.alt:hover,
+.btn.alt:active {
+  color: var(--font-light-color);
+  cursor: pointer;
+  background-position: left;
+  box-shadow: 0 0 4px 1px var(--secondary--light-color);
+}
+
+.btn.alt {
+  color: var(--font-light-color);
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  height: 8rem;
+}
+
+footer p {
+  color: var(--font-light-color);
+}

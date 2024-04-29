@@ -4,257 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="./public/images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link href="./public/styles/base.css" rel="stylesheet">
-    <link href="./public/styles/navigation.css" rel="stylesheet">
-    <link href="./public/styles/main.css" rel="stylesheet">
-    <link href="./public/styles/skills.css" rel="stylesheet">
-    <link href="./public/styles/projects.css" rel="stylesheet">
-    <link href="./public/styles/carousel.css" rel="stylesheet">
-    <link href="./public/styles/form.css" rel="stylesheet">
-    <link href="./public/styles/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/education.css">
+    <link rel="stylesheet" href="./styles/works.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+    <link rel="icon" type="image/x-icon" href="profile-favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <title>Joshua T.</title>
+    <title>Choxx</title>
+    <script src="./scripts/nav-button.js" defer></script>
+    <script type="module" src="./scripts/window-scroll.js" defer></script>
+    <script type="module" src="./scripts/scroll-to.js" defer></script>
+    <script type='module' src="./scripts/context.js" defer></script>
+    <script type='module' src="./scripts/modal.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+
 </head>
 
 <body>
 
+
     <header>
-        <nav class="nav-container">
-            <p class="gradient-text" id="logo">Joshua T. </p>
-            <ul class="nav-menu">
-                <li> <a href="#home">Home </a></li>
-                <li> <a href="#about-me">About</a> </li>
-                <li> <a href="#journey">Journey</a></li>
-                <li> <a href="#skills">Skills </a> </li>
-                <li> <a href="#projects">Projects </a></li>
+        <nav>
+            <a class="logo-container" id="logo">
+                <div class="logo">
+                </div>
+                <h1>Choxx</h1>
+            </a>
+            <ul class="nav-items">
+                <li class="active"><a>Home</a></li>
+                <li> <a>About</a></li>
+                <li> <a>Services </a></li>
+                <li> <a>Education </a></li>
+                <li> <a>Experience </a></li>
+                <li> <a>Works </a></li>
             </ul>
-            <button id="mobile-menu-btn">
+
+            <button class="nav-burger-button">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-        </nav>
 
+        </nav>
+        <aside>
+            <ul class="nav-items">
+                <li> <a>Home</a></li>
+                <li> <a>About</a></li>
+                <li> <a>Services </a></li>
+                <li> <a>Education </a></li>
+                <li> <a>Experience </a></li>
+                <li> <a>Works </a></li>
+            </ul>
+        </aside>
     </header>
-    <aside>
-        <ul id="mobile-menu">
-            <li> <a href="#home">Home </a></li>
-            <li> <a href="#about-me">About</a> </li>
-            <li> <a href="#journey">Journey</a></li>
-            <li> <a href="#skills">Skills </a> </li>
-            <li> <a href="#projects">Projects </a></li>
-        </ul>
-    </aside>
 
     <main>
 
-        <dialog class="modal" close>
-        </dialog>
         <section id="home">
-            <div class="container">
-                <div class="container-left">
-                    <p id="joshua-teoxon"> I am Joshua Teoxon</p>
-                    <p class="gradient-text" id="web-dev"> Web developer</p>
-                    <a href="#contact-me" class="btn"> Contact Me</a>
-                </div>
-                <div class="container-right">
-                    <img id="home-image" src="./public/images/Joshua Teoxon.jpeg" alt="Joshua Teoxon">
-                </div>
+            <img src="./website design/web designs.jpg" alt="web-design">
+            <div class="name">
+                <h5 class="animate first"> Hi my name is</h5>
+                <h1 class="animate second"> JOSHUA TEOXON </h1>
+                <p class="animate third"> FRONT-END and BACK-END DEVELOPER</p>
             </div>
+            <div class="icons animate fourth">
+                <a class="bi bi-facebook" href="https://www.facebook.com/joshteox/"> </a>
+                <a class="bi bi-twitter" href="https://twitter.com/Joshua52119837"></a>
+                <a class="bi bi-instagram" href="https://www.instagram.com/juswatox/"></a>
+                <a class="bi bi-linkedin" href="https://www.linkedin.com/in/joshua-teoxon-34223b217/"></a>
+                <a class="bi bi-google" href="mailto:teoxonjoshua13@gmail.com"></a>
+            </div>
+            <button class="btn animate fifth" id="contact-me">Contact Me</button>
         </section>
 
-        <section id="about-me">
-            <div class="container">
-                <div class="container-left">
-                    <h2> About me </h2>
-                    <p class="big-para"> I am a Web Developer</p>
-                    <p class="para"> I know how to create frontend and backend program. I am passionate and
-                        commited
-                        on
-                        learning
-                        on a daily basis. I am a fast learner and willing to learn any task
-                        that I've been given </p>
-                </div>
-                <div class="container-right">
-                    <img id="joshua-second" src="./public/images/Joshua 2nd.jpg" alt="Joshua Teoxon">
-                </div>
+        <section id="about">
+            <div class="profile">
+                <img src="Joshua Teoxon.jpeg" alt="joshua-teoxon">
             </div>
-        </section>
-
-
-        <section id="journey">
-            <h2> Journey</h2>
-            <div class="container">
-                <div class="container-left">
-                    <p class="transparent">Experience</p>
-                    <p class="big-para">My journey as a<span> Web Developer</span></p>
-                </div>
-                <div class="container-right">
-                    <ul class="journey">
-                        <li>
-                            <h4> Web Developer </h4>
-                            <p> learning front-end and backend program (2023-continuing)</p>
-                        </li>
-                        <li>
-                            <h4> BBLTED- ICT</h4>
-                            <p> graduated at PUP as a Teacher in ICT (2019-2023)</p>
-                        </li>
-                        <li>
-                            <h4> Intern Teacher </h4>
-                            <p> teaching HTML, CSS, and Javascript (2023 - 4 months)</p>
-                        </li>
-                        <li>
-                            <h4>ICT - Programmer </h4>
-                            <p>learned basic JAVA, HTML, CSS AND JAVASCRIPT (2017-2019)</p>
-                        </li>
-                    </ul>
+            <div class="about">
+                <h3> About</h3>
+                <h1> Why You Hire Me ? </h1>
+                <p> I have knowledge in creating backend such as api, node js and express.
+                    I can make interactive website.
+                    I am passionate and commited on learning on a daily basis.
+                    I am a fast learner and willing to learn any task that I've been given</p>
+                <div class="skill-container">
                 </div>
             </div>
 
         </section>
 
-        <section id="skills">
-            <h2> Skills </h2>
-            <div class="container">
-                <div class="container-left">
-                    <p class="transparent"> Expertise</p>
-                    <p class="big-para"> A <span>graphical</span> representation of my skills
+        <section id="services">
+            <h3> Services</h3>
+            <h1> Service I Provide</h1>
+            <div class="services-container">
+            </div>
+        </section>
+
+        <section id="education" class="educ-expi">
+            <h3> Education</h3>
+            <h1> My Education</h1>
+            <div class="education-container">
+            </div>
+        </section>
+
+        <section id="experience" class="educ-expi">
+            <h3> Experience</h3>
+            <h1> Experience/Certificate</h1>
+            <div class="education-container">
+            </div>
+        </section>
+
+        <section id="works">
+            <h3> Works</h3>
+            <h1> My Remarkable Works</h1>
+            <div class="works-container">
+            </div>
+        </section>
+
+
+        <section id="contacts">
+            <h3> Contacts </h3>
+            <h1> Get in Touch with Me</h1>
+            <div class="contacts-container">
+                <div class="contact">
+                    <i class="bi-geo-alt"></i>
+                    <h4>Address</h4>
+                    <p>Blk 9 lot 3 Araneta st. Cielito Subdivision. Camarin Caloocan City</p>
+                </div>
+                <div class="contact">
+                    <i class="bi-telephone"></i>
+                    <h4>Contacts</h4>
+                    <p>+639105763632 <br>
+                        +639123456780
                     </p>
                 </div>
-                <div class="container-right">
-                    <div class="frontend-backend">
-                        <h3> Front End </h3>
-                        <div class="progress-container">
-                            <p> HTML </p>
-                            <progress value="90" max="100">
-
-                        </div>
-
-                        <div class="progress-container">
-                            <p> CSS </p>
-                            <progress value="70" max="100">
-
-                        </div>
-
-                        <div class="progress-container">
-                            <p> Javascript </p>
-                            <progress value="80" max="100">
-                        </div>
-
-                        <div class="progress-container">
-                            <p> React.js </p>
-                            <progress value="60" max="100">
-                        </div>
-
-                    </div>
-
-                    <div class="frontend-backend">
-                        <h3> Back End </h3>
-
-                        <div class="progress-container">
-                            <p> Node.js </p>
-                            <progress value="60" max="100">
-                        </div>
-
-                        <div class="progress-container">
-                            <p> Mongodb </p>
-                            <progress value="40" max="100">
-                        </div>
-
-                        <div class="progress-container">
-                            <p> Workbench SQL</p>
-                            <progress value="40" max="100">
-                        </div>
-                        <div class="progress-container">
-                            <p> API's</p>
-                            <progress value="60" max="100">
-                        </div>
-
-
-                    </div>
-
+                <div class="contact">
+                    <i class="bi-envelope"></i>
+                    <h4>Email</h4>
+                    <p>teoxonjoshua13@gmail.com <br>
+                        teoxonjoshua36@gmail.com</p>
                 </div>
+
             </div>
-        </section>
-
-
-        <section id="projects">
-            <h2> Projects </h2>
-            <ul class="project-grid">
-                <li>
-                    <img src="./data/authentication/1.PNG">
-                    <p> Authentication </p>
-                    <button class="btn alt" data-project="authentication"> Read More</button>
-                </li>
-                <li>
-                    <img src="./data/facebook/1.PNG">
-                    <p> Facebook </p>
-                    <button class="btn alt" data-project="facebook"> Read More</button>
-                </li>
-                <li>
-                    <img src="./data/fileupload/1.PNG">
-                    <p> File Upload with mongodb </p>
-                    <button class="btn alt" data-project="fileupload"> Read More</button>
-                </li>
-                <li>
-                    <img src="./data/json/1.PNG">
-                    <p> EJS with JSON </p>
-                    <button class="btn alt" data-project="json"> Read More</button>
-                </li>
-                <li>
-                    <img src="./data/sqlejs/1.PNG">
-                    <p> Sql/mongodb with ejs </p>
-                    <button class="btn alt" data-project="sqlejs"> Read More</button>
-                </li>
-                <li>
-                    <img src="./data/todolist/1.PNG">
-                    <p> Todolist with JSON </p>
-                    <button class="btn alt" data-project="todolist"> Read More</button>
-                </li>
-            </ul>
-        </section>
-
-
-        <section id="contact-me">
-            <div class="container">
-                <div class="container-left">
-                    <h2> Contact Me</h2>
-                    <p class='big-para'> Feel free to get in touch with me</p>
-                    <div class="icon-class">
-                        <a href="https://github.com/choxii13"><i class="bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/joshua-teoxon-34223b217/"><i class="bi-linkedin"></i></a>
-                        <a href="mailto:teoxonjoshua13@gmail.com"><i class="bi-google"></i></a>
-                        <a href="https://www.instagram.com/juswatox/"><i class="bi-instagram"></i></a>
-                    </div>
+            <div class="form-and-map">
+                <div class="form">
+                    <input type="text" name="name" id="name" placeholder="Name:" required>
+                    <input type="email" name="email" id="email" placeholder="Email:" required>
+                    <textarea name="message" id="message" placeholder="Message:"></textarea>
+                    <p> Please input a valid credentials</p>
+                    <a class="btn alt" type="submit" id="mailto">Submit</a>
                 </div>
-                <div class="container-right">
-                    <form method="POST">
-                        <div>
-                            <input type='text' name="firstname" placeholder="First Name" required>
-                            <input type='text' name="lastname" placeholder="Last Name" required>
-                        </div>
-                        <div>
-                            <input type='email' name="email" placeholder="Email Address" required>
-                            <input type='text' name="subject" placeholder="Subject" required>
-                        </div>
-                        <textarea name='body' rows="6" placeholder="Message"></textarea>
-                        <button class="btn">Send Message</button>
-                    </form>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246977.49470218527!2d120.86442732544182!3d14.711271368188454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b11e9607e897%3A0x177df136ef2afa6a!2sCaloocan%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1714224644673!5m2!1sen!2sph"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
+
             </div>
 
         </section>
+
+
+        <dialog id="modal">
+            <div class="modal">
+                <i class="bi-x" id="close"></i>
+                <div class="modal-content">
+                </div>
+                <i class="bi-caret-right-fill" id="next"></i>
+                <i class="bi-caret-left-fill" id="before"></i>
+            </div>
+        </dialog>
+
+
+
+
     </main>
 
     <footer>
-        <p> CopyRight @ 2024 Joshua T. All Rights Reserved</p>
+        <p>CopyRight @ 2024 Joshua T. All Rights Reserved</p>
     </footer>
 </body>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script type="module" src="./public/script/main-script.js"></script>
 
 </html>
