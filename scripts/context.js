@@ -1,8 +1,8 @@
-import { skillHtml } from "../context/skill.js";
-import { servicesHtml } from "../context/service-i-provide.js";
-import { educationHtml } from "../context/educations.js";
-import { experienceHtml } from "../context/experience.js";
-import { worksHtml } from "../context/work.js";
+import { skillHtml } from "./context/skill.js";
+import { servicesHtml } from "./context/service-i-provide.js";
+import { educationHtml } from "./context/educations.js";
+import { experienceHtml } from "./context/experience.js";
+import { worksHtml } from "./context/work.js";
 
 const skillElement = document.querySelector(".skill-container");
 skillElement.innerHTML = skillHtml;
