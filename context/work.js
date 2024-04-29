@@ -64,7 +64,7 @@ for (let i = 0; i < works.length; i++) {
     <h3>${works[i].title}</h3>
     <div class="works-action-icon">
         <i class="bi-eye"></i>
-       <a class="bi-link-45deg" href="${works[i].link}"> </a>
+      <a class="bi-link-45deg" href="${works[i].link}"> </a>
     </div>
 </div>
 </div>

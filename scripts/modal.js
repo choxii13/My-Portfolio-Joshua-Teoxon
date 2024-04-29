@@ -44,6 +44,7 @@ function showImg(current, direction) {
   lazyLoading(modalImg);
   const textLength = document.querySelector(".modal-content .img-length");
   textLength.textContent = `${currentImg + 1} of ${modalImg.length} `;
+
   for (let i = 0; i < modalImg.length; i++) {
     modalImg[i].style.display = "none";
   }
