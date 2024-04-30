@@ -6,7 +6,6 @@ const openModal = document.querySelectorAll(".bi-eye");
 
 const modalElement = document.querySelector("#modal");
 const closeModal = document.querySelector("#close");
-
 const nextElement = document.querySelector("#next");
 const beforeElement = document.querySelector("#before");
 
@@ -41,9 +40,10 @@ beforeElement.addEventListener("click", () => {
 
 function showImg(current, direction) {
   const modalImg = document.querySelectorAll(".modal-content img");
-  lazyLoading(modalImg);
   const textLength = document.querySelector(".modal-content .img-length");
   textLength.textContent = `${currentImg + 1} of ${modalImg.length} `;
+
+  lazyLoading(modalImg);
 
   for (let i = 0; i < modalImg.length; i++) {
     modalImg[i].style.display = "none";
