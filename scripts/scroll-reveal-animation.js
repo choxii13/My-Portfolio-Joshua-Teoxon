@@ -16,7 +16,7 @@ const servicesContainer = document.querySelector(
 );
 
 scrollReveal(serviceElement.children, "top", 1, 0);
-scrollReveal(servicesContainer.children, "bottom", 0, 200);
+scrollReveal(servicesContainer.children, "bottom", 0, 0);
 
 // education scroll
 const educationElement = document.querySelector("#education");
@@ -54,15 +54,14 @@ const contactContainer = document.querySelector(
 
 const formElement = document.querySelector("#contacts .form-and-map .form");
 const mapElement = document.querySelector("#contacts .form-and-map .map");
-
 scrollReveal(contactElement.children, "right", 2, 0);
-scrollReveal(contactContainer.children, "right", 2, 0);
-scrollReveal(formElement.children, "left", 0, 200);
-scrollReveal(mapElement, "right", 0, 200);
+scrollReveal(contactContainer.children, "right", 0, 100);
+scrollReveal(formElement.children, "left", 0, 100);
+scrollReveal(mapElement, "right", 0, 100);
 
 function scrollReveal(element, origin, value, delay) {
   const scroll = {
-    distance: "200px",
+    distance: "300px",
     delay: delay,
     duration: 3000,
     origin: origin,
