@@ -29,7 +29,7 @@ const education = [
 ];
 
 export function educationExp(value) {
-  let educationHtml = ` `;
+  let educationHtml = `<div class="straight-line"> </div> `;
   for (let i = 0; i < value.length; i++) {
     educationHtml += `
   <div class='education'>
@@ -50,7 +50,7 @@ export function educationExp(value) {
     </div>
   </div>`;
   }
-  educationHtml += '<div class="straight-line"></div>';
+
   return educationHtml;
 }
 

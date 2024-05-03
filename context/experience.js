@@ -11,8 +11,8 @@ const experience = [
   },
   {
     school: "React - The Complete Guide 2024 <br> (incl. React Router & Redux)",
-    major: "IT - Programmer",
-    year: "2017-2019",
+    major: "UDEMY",
+    year: "12/2023-01/2024",
     para: `In this bootcamp, I learned about <strong> reusing code and building components </strong>.
     It enhances the speed of the program or website. It is easy to
     <strong> manipulate the DOM </strong>

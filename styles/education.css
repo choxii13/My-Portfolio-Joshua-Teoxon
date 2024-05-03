@@ -79,14 +79,14 @@
   }
 }
 
-.educ-expi .straight-line {
+.education-container .straight-line {
   position: absolute;
   height: 100%;
   background-color: aqua;
   width: 2px;
   right: 50%;
   z-index: 1;
-  visibility: hidden;
+  display: none;
 }
 
 .educ-expi .education:hover {
@@ -121,7 +121,7 @@
       text-align: right;
     }
   }
-  .educ-expi .straight-line {
-    visibility: visible;
+  .education-container .straight-line {
+    display: block;
   }
 }
