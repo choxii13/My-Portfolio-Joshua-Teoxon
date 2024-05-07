@@ -23,14 +23,13 @@
 
 .works-container .works {
   height: 15rem;
-  padding: 0.3rem;
-  background-color: var(--font-dark-color);
+
   border-radius: 2px;
   overflow: hidden;
   position: relative;
   display: grid;
   place-items: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .works-container .works img {
@@ -48,7 +47,6 @@
 .works-container .works:hover:after {
   cursor: pointer;
   background-color: rgba(2, 136, 160, 0.84);
-
   transition: background-color 0.5s ease-out;
 }
 
